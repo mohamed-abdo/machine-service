@@ -30,6 +30,7 @@ svc.on("uninstall", function () {
     console.info("The service exists: ", svc.exists);
   });
 });
+
 svc.on("alreadyuninstalled", function () {
   console.info("machine-service-installer already uninstalled!");
 });
@@ -37,6 +38,7 @@ svc.on("alreadyuninstalled", function () {
 var options = {
   name: "machine service uninstaller",
 };
+
 sudo.exec("echo hello", options, function (error, _) {
   if (error) throw error;
   console.info("elevated permissions is granted");

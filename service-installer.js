@@ -30,6 +30,7 @@ svc.on("install", function () {
     svc.start();
   });
 });
+
 svc.on("alreadyinstalled", function () {
   console.info("machine-service-installer already installed!");
 });
@@ -37,6 +38,7 @@ svc.on("alreadyinstalled", function () {
 var options = {
   name: "machine service installer",
 };
+
 sudo.exec("echo hello", options, function (error, _) {
   if (error) throw error;
   console.info("elevated permissions is granted");
