@@ -16,11 +16,10 @@
     "assets": [
       "assets/**/*"
     ],
-    "targets": [],
+    "targets": ["node16-win","node16-macos"],
     "outputPath": "dist"
   },
   "dependencies": {
-    "node-mac": "^1.0.1",
     "node-windows": "^1.0.0-beta.7",
     "shelljs": "^0.8.5",
     "sudo-prompt": "^9.2.1"
