@@ -1,0 +1,28 @@
+{
+  "name": "machine-service-installer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg --out-path ../dist --config package.json index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mohamed abdo",
+  "license": "ISC",
+  "pkg": {
+    "scripts": [],
+    "assets": [
+      "assets/**/*"
+    ],
+    "targets": [],
+    "outputPath": "dist"
+  },
+  "dependencies": {
+    "node-mac": "^1.0.1",
+    "node-windows": "^1.0.0-beta.7",
+    "shelljs": "^0.8.5",
+    "sudo-prompt": "^9.2.1"
+  }
+}
