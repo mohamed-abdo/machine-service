@@ -2,7 +2,7 @@ const os = require("node:os");
 const fs = require('node:fs');
 const path = require("node:path");
 const sudo = require("sudo-prompt");
-const srvName = "machine-service-installer";
+const srvName = "emaratech-machine-service";
 const { serviceFileFactory, serviceFactory } = require("./utils");
 
 let Service = serviceFactory(os.platform());
